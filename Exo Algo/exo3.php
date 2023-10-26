@@ -2,7 +2,8 @@
 echo "Question 1 : " . "\n";
 
 $nb = readline("Entrez un nombre : ");
-if ($nb < 0) 
+
+if ($nb<0) 
     echo "Votre nombre est négatif." . "\n";
 else 
     echo "Votre nombre est positif." . "\n";
@@ -11,6 +12,7 @@ echo "Question 2 : " . "\n";
 
 $nb1 = readline("Entrez un premier nombre : ");
 $nb2 = readline("Entrez un second nombre : ");
+
 if ($nb1>0 xor $nb2<0)
     echo "Le produit de vos nombres est positif." . "\n";
 else
@@ -19,9 +21,10 @@ else
 echo "Question 3 : " . "\n";
 
 $nb = readline("Entrez un nombre : ");
-if ($nb < 0) 
+
+if ($nb<0) 
     echo "Votre nombre est négatif." . "\n";
-else if ($nb > 0)
+else if ($nb>0)
         echo "Votre nombre est positif." . "\n";
     else 
         echo "Votre nombre est positif et négatif." . "\n";
@@ -30,6 +33,7 @@ echo "Question 4 : " . "\n";
 
 $nb1 = readline("Entrez un premier nombre : ");
 $nb2 = readline("Entrez un second nombre : ");
+
 if (($nb1>0 xor $nb2<0) and $nb1!=0 and $nb2!=0)
     echo "Le produit de vos nombres est positif." . "\n";
 elseif ($nb1==0 or $nb2==0)
@@ -40,6 +44,7 @@ elseif ($nb1==0 or $nb2==0)
 echo "Question 5 : " . "\n";
 
 $age = readline("Entrez l'age de votre enfant : ");
+
 if ($age>5 and $and<8)
     echo "Votre enfant est un Poussin." . "\n";
 else if ($age>7 and $age<10)
@@ -49,12 +54,13 @@ else if ($age>7 and $age<10)
         else if ($age>11)
                 echo "Votre enfant est un Cadet." . "\n";
             else 
-                echo "Votre enfant n'est pas dans un catégorie." . "\n";
+                echo "Votre enfant n'est pas dans une catégorie." . "\n";
 
 echo "Question 6 : " . "\n";
 
 $heure = readline("Entrez l'Heure sans les minutes : ");
 $minute = readline("Entrez les minutes : ");
+
 if ($minute<59)
     echo "Il sera " . $heure . "h" . ($minute + 1) . "\n";
 else if (($minute=59) and ($heure<23))
@@ -67,6 +73,7 @@ echo "Question 7 : " . "\n";
 $heure = readline("Entrez l'Heure sans les minutes : ");
 $minute = readline("Entrez les minutes : ");
 $seconde = readline("Entrez les secondes : ");
+
 if ($seconde<59)
     echo "Il sera " . $heure . "h" . $minute . " et " . ($seconde + 1) . "s" . "\n";
 else if (($seconde=59) and ($minute<59))
@@ -79,6 +86,7 @@ else if (($seconde=59) and ($minute<59))
 echo "Question 8 : " . "\n";
 
 $nbPhotocopie = readline("Entrez le nombre de photocopies : ");
+
 if ($nbPhotocopie<11 and $nbPhotocopie>0)
     echo "Le prix sera de " . ($nbPhotocopie * 0.10) . ("€") . "\n";
 else if ($nbPhotocopie<31 and $nbPhotocopie>0)
@@ -92,6 +100,7 @@ echo "Question 9 : " . "\n";
 
 $sexe = readline("Entrez H si vous êtes un Homme ou F si vous êtes une Femme : ");
 $age = readline("Entrez votre age : ");
+
 if (($sexe=="H") and ($age>20))
     echo "Vous êtes imposable." . "\n";
 else if ($sexe="F" and $age>17 and $age<36)
@@ -105,6 +114,7 @@ echo "Question 10 : " . "\n";
 $jour = readline("Entrez le jour : ");
 $mois = readline("Entrez le mois : ");
 $annee = readline("Entrez l'année' : ");
+
 if ($jour==29 and $mois==2)
     echo "C'est une année bissextile." . "\n";
 else if ((fmod($annee, 4)==0) or (fmod($annee, 400)==0) and (fmod($annee, 100)!=0))

@@ -2,37 +2,37 @@
 
 echo "Question 1 :" . "\n";
 
-$A1 = 1;
-$B1 = $A1 + 3;
-$A1 = 3;
+$A = 1;
+$B = $A + 3;
+$A = 3;
 
-echo "La valeur de A est : " . $A1 . "\n";
-echo "La valeur de B est : " . $B1 . "\n";
+echo "La valeur de A est : " . $A . "\n";
+echo "La valeur de B est : " . $B . "\n";
 
 echo "Question 2 :" . "\n";
 
-$A2 = 5;
-$B2 = 3;
-$C2 = $A2 + $B2;
-$A2 = 2;
-$C2 = $B2 - $A2;
+$A = 5;
+$B = 3;
+$C = $A + $B;
+$A = 2;
+$C = $B - $A;
 
-echo "La valeur de A est : " . $A2 . "\n";
-echo "La valeur de B est : " . $B2 . "\n";
-echo "La valeur de C est : " . $C2 . "\n";
+echo "La valeur de A est : " . $A . "\n";
+echo "La valeur de B est : " . $B . "\n";
+echo "La valeur de C est : " . $C . "\n";
 
 
 echo "Question 3 :" . "\n";
 
-$A3 = 3;
-$B3 = 10;
-$C3 = $A3 + $B3;
-$B3 = $A3 + $B3;
-$A3 = $C3;
+$A = 3;
+$B = 10;
+$C = $A + $B;
+$B = $A + $B;
+$A = $C;
 
-echo "La valeur de A est : " . $A3 . "\n";
-echo "La valeur de B est : " . $B3 . "\n";
-echo "La valeur de C est : " . $C3 . "\n";
+echo "La valeur de A est : " . $A . "\n";
+echo "La valeur de B est : " . $B . "\n";
+echo "La valeur de C est : " . $C . "\n";
 
 echo "Question 4 :" . "\n";
 
@@ -52,30 +52,30 @@ echo "La valeur de Y est : " . $Y . "\n";
 
 echo "Question 5 :" . "\n";
 
-$A5 = 1;
-$B5 = 2;
-$C5 = 3;
+$A = 1;
+$B = 2;
+$C = 3;
 
-echo "La valeur de A est : " . $A5 . "\n";
-echo "La valeur de B est : " . $B5 . "\n";
-echo "La valeur de C est : " . $C5 . "\n";
+echo "La valeur de A est : " . $A . "\n";
+echo "La valeur de B est : " . $B . "\n";
+echo "La valeur de C est : " . $C . "\n";
 
-$a5 = $A5;
-$A5 = $C5;
-$C5 = $B5;
-$B5 = $a5;
+$a = $A;
+$A = $C;
+$C = $B;
+$B = $a;
 
 echo "Les valeurs de A, B et C s'interchangent :" . "\n";
-echo "La valeur de A est : " . $A5 . "\n";
-echo "La valeur de B est : " . $B5 . "\n";
-echo "La valeur de C est : " . $C5 . "\n";
+echo "La valeur de A est : " . $A . "\n";
+echo "La valeur de B est : " . $B . "\n";
+echo "La valeur de C est : " . $C . "\n";
 
 echo "Question 6 :" . "\n";
 
-$A6 = "423";
-$B6 = "12";
-$C6 = $A6 . $B6;
+$A = "423";
+$B = "12";
+$C = $A . $B;
 
-echo "La valeur de A est : " . $A6 . "\n";
-echo "La valeur de B est : " . $B6 . "\n";
-echo "La valeur de C est : " . $C6 . "\n";
+echo "La valeur de A est : " . $A . "\n";
+echo "La valeur de B est : " . $B . "\n";
+echo "La valeur de C est : " . $C . "\n";

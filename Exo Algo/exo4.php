@@ -1,31 +1,31 @@
 <?php
 
-// echo "Question 1 :\n";
+echo "Question 1 :\n";
 
-// $nb = 10;
-// while ($nb<1 or $nb>3)
-//     $nb = readline("Entrez un nombre entre 1 et 3 : ");
+$nb = 10;
+while ($nb<1 or $nb>3)
+    $nb = readline("Entrez un nombre entre 1 et 3 : ");
 
-// echo "Question 2 :\n";
+echo "Question 2 :\n";
 
-// $nb = 100;
-// while ($nb<10 or $nb>20){
-//     $nb = readline("Entrez un nombre entre 10 et 20 : ");
-//     if ($nb<10)
-//         echo "Plus Grand !\n";
-//     elseif ($nb>20)
-//         echo "Plus Petit !\n";
-// }    
+$nb = 100;
+while ($nb<10 or $nb>20){
+    $nb = readline("Entrez un nombre entre 10 et 20 : ");
+    if ($nb<10)
+        echo "Plus Grand !\n";
+    elseif ($nb>20)
+        echo "Plus Petit !\n";
+}    
 
-// echo "Question 3 :\n";
+echo "Question 3 :\n";
 
-// $nb = readline("Entrez un nombre : ");
-// $i = 0;
+$nb = readline("Entrez un nombre : ");
+$i = 0;
 
-// while ($i<10){
-//     $i++;
-//     echo ($nb + $i) . "\n";
-// }
+while ($i<10){
+    $i++;
+    echo ($nb + $i) . "\n";
+}
 
 echo "Question 4 :\n";
 
