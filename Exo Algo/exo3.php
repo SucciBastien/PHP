@@ -45,16 +45,12 @@ echo "Question 5 : " . "\n";
 
 $age = readline("Entrez l'age de votre enfant : ");
 
-if ($age>5 and $and<8)
-    echo "Votre enfant est un Poussin." . "\n";
-else if ($age>7 and $age<10)
-        echo "Votre enfant est un Pupille." . "\n";
-    else if ($age>9 and $age<12)
-            echo "Votre enfant est un Minime." . "\n";
-        else if ($age>11)
-                echo "Votre enfant est un Cadet." . "\n";
-            else 
-                echo "Votre enfant n'est pas dans une catégorie." . "\n";
+switch ($age){
+    case $age>11: echo "Votre enfant est un Cadet." . "\n"; break;
+    case $age>9: echo "Votre enfant est un Minime." . "\n"; break;
+    case $age>7: echo "Votre enfant est un Pupille." . "\n"; break;
+    case $age>5: echo "Votre enfant est un Poussin." . "\n"; break;
+}
 
 echo "Question 6 : " . "\n";
 
