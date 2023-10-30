@@ -17,13 +17,13 @@ elseif ($question==2){
 
     $nb = readline("Entrez un nombre : ");
 
-    echo "Les 5 nombres suivants sont : \n \n";
+    echo "Les 5 nombres suivants sont : \n";
     for ($i=1; $i<=5;$i++)
         echo $nb-$i . "\n \n";
 
-    echo "Les 5 nombres précédents sont : \n \n";
+    echo "Les 5 nombres précédents sont : \n";
     for ($i=1; $i<=5;$i++)
-        echo ($nb+$i . "\n \n");
+        echo $nb+$i . "\n \n";
 }
 elseif ($question==3){
     echo "Question 3 : \n \n";
@@ -34,7 +34,7 @@ elseif ($question==3){
     for ($i=1; $i<=$nb; $i++)
         $resultat = $i * $resultat;
 
-    echo "La factorielle de $nb est de $resultat.\n \n";
+    echo "La factorielle de $nb est $resultat.\n \n";
 }
 elseif ($question==4){
     echo "Question 4 : \n \n";

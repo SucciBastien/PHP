@@ -7,17 +7,17 @@ if ($question==1){
 
     $dimension = readline("Entrez le nombre d'éléments du tableau à trier : ");
     $tab = [];
-    $cons = 0;
+    $cons = true;
 
     $tab[0] = readline("Entrez la valeur de l'élément du tableau : ");
 
     for ($i=1; $i<$dimension; $i++){
         $tab[$i] = readline("Entrez la valeur de l'élément du tableau : ");
-        if ($tab[$i]<=$tab[$i-1]){
-            $cons++;
+        if (($tab[$i]!=$tab[$i-1]+1) and ($tab[$i]!=$tab[$i-1]-1)){
+            $cons=false;
         }
     }
-    if ($cons!=0){
+    if ($cons==false){
         echo "Les valeurs de ce tableau ne sont pas consécutives.\n \n";
     }
     else{
@@ -57,21 +57,28 @@ elseif ($question==2){
 
     $dimension = readline("Entrez le nombre d'éléments du tableau à trier : ");
     $tab = [];
-    $tempPos = 0;
-    $tempVal = 0;
+    $estVrai = true;
 
     for ($i=0; $i<$dimension; $i++){
-        $tab[$i] = readline("Entrez la valeur de l'élément du tableau : ");
+            $tab[$i] = readline("Entrez la valeur de l'élément du tableau : ");
     }
-    for ($i=1; $i<$dimension; $i++){
-        for ($j=0; $j<$dimension-$i; $j++){
-            if ($tab[$j]<$tab[$j+1]){
-                $tempVal = $tab[$j];
-                $tab[$j] = $tab[$j+1];
-                $tab[$j+1] =$tempVal;
+
+    while ($estVrai){
+        $estVrai = false;
+        for ($i=1; $i<$dimension; $i++){
+            for ($j=0; $j<$dimension-$i; $j++){
+                if ($tab[$j]<$tab[$j+1]){
+                    $tempVal = $tab[$j];
+                    $tab[$j] = $tab[$j+1];
+                    $tab[$j+1] =$tempVal;
+                    $estVrai = true;
+                }
             }
         }
     }
+
+    
+    
 
     echo "Votre tableau trié dans l'ordre décroisant : \n";
     echo implode(", ", $tab) . "\n \n";
