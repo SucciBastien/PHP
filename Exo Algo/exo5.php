@@ -1,67 +1,65 @@
 <?php
 
-echo "Question 1 : \n";
-echo " \n";
+$question = readline("Entrez le numéro de question que vous voulez lancer : ");
 
-$nb = random_int(1,9);
+if ($question==1){
+    echo "Question 1 : \n \n";
 
-echo "Le nombre aléatoire est $nb.\n";
-echo " \n";
+    $nb = random_int(1,9);
 
-for ($i=1; $i<=10; $i++)
-    echo "$i x $nb =" . ($nb*$i) . "\n";
+    echo "Le nombre aléatoire est $nb.\n \n";
 
-echo " \n";
-echo "Question 2 : \n";
-echo " \n";
+    for ($i=1; $i<=10; $i++)
+        echo "$i x $nb =" . ($nb*$i) . "\n \n";
+}
+elseif ($question==2){
+    echo "Question 2 : \n \n";
 
-
-$nb = readline("Entrez un nombre : ");
-
-echo " \n";
-echo "Les 5 nombres suivants sont : \n";
-for ($i=1; $i<=5;$i++)
-    echo ($nb-$i . "\n");
-    echo " \n";
-
-echo " \n";
-echo "Les 5 nombres précédents sont : \n";
-for ($i=1; $i<=5;$i++)
-    echo ($nb+$i . "\n");
-    echo " \n";
-
-
-echo "Question 3 : \n";
-echo " \n";
-
-
-$nb = readline("Entrez un nombre : ");
-$resultat = 1;
-
-for ($i=1; $i<=$nb; $i++)
-    $resultat = $i * $resultat;
-
-echo " \n";
-echo "La factorielle de $nb est de $resultat.\n";
-echo " \n";
-
-echo "Question 4 : \n";
-echo " \n";
-
-$nb = readline("Entrez un nombre : ");
-$nbPetit = $nb;
-$nbGrand = $nb;
-
-for ($i=1; $i<=4; $i++){
     $nb = readline("Entrez un nombre : ");
-    if ($nb<=$nbPetit)
-        $nbPetit = $nb;
-    elseif ($nb>=$nbGrand)
-        $nbGrand = $nb;
+
+    echo "Les 5 nombres suivants sont : \n \n";
+    for ($i=1; $i<=5;$i++)
+        echo $nb-$i . "\n \n";
+
+    echo "Les 5 nombres précédents sont : \n \n";
+    for ($i=1; $i<=5;$i++)
+        echo ($nb+$i . "\n \n");
+}
+elseif ($question==3){
+    echo "Question 3 : \n \n";
+
+    $nb = readline("Entrez un nombre : ");
+    $resultat = 1;
+
+    for ($i=1; $i<=$nb; $i++)
+        $resultat = $i * $resultat;
+
+    echo "La factorielle de $nb est de $resultat.\n \n";
+}
+elseif ($question==4){
+    echo "Question 4 : \n \n";
+
+    $nb = readline("Entrez un nombre : ");
+    $nbPetit = $nb;
+    $nbGrand = $nb;
+
+    for ($i=1; $i<=4; $i++){
+        $nb = readline("Entrez un nombre : ");
+        if ($nb<=$nbPetit)
+            $nbPetit = $nb;
+        elseif ($nb>=$nbGrand)
+            $nbGrand = $nb;
+    }
+
+    echo "Le plus grand nombre parmis ceux entrés est : $nbGrand.\n \n";
+    echo "Le plus petit nombre parmis ceux entrés est : $nbPetit.\n \n"; 
 }
 
-echo " \n";
-echo "Le plus grand nombre parmis ceux entrés est : $nbGrand.\n";
-echo " \n";
-echo "Le plus petit nombre parmis ceux entrés est : $nbPetit.\n";
-echo " \n";
+
+
+
+
+
+
+
+

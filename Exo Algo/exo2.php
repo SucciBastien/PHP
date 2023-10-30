@@ -1,25 +1,36 @@
 <?php
 
-echo "Question 1 :\n";
+$question = readline("Entrez le numéro de question que vous voulez lancer : ");
 
-$nb = (float)readline("Saisissez un nombre à mettre au carré : ");
+if ($question==1){
+    echo "Question 1 :\n";
 
-echo "Votre nombre au carré est " . pow($nb, 2) . "\n";
+    $nb = (float)readline("Saisissez un nombre à mettre au carré : ");
 
-echo "Question 2 :\n";
+    echo "Votre nombre au carré est " . pow($nb, 2) . "\n";
+}
+elseif ($question==2){
+    echo "Question 2 :\n";
 
-$prenom = readline("Saisissez votre prénom : ");
+    $prenom = readline("Saisissez votre prénom : ");
 
-echo "Bonjour " . $prenom . "\n";
+    echo "Bonjour " . $prenom . "\n";
+}
+elseif ($question==3){
+    echo "Question 3 :\n";
 
-echo "Question 3 :\n";
+    $prixUniHT = readline("Saisissez le prix HT de l'article : ");
 
-$prixUniHT = readline("Saisissez le prix HT de l'article : ");
+    $nbProduit = readline("Saisissez le nombre d'article : ");
 
-$nbProduit = readline("Saisissez le nombre d'article : ");
+    $TVA = readline("Saisissez la valeur de TVA en % : ");
 
-$TVA = readline("Saisissez la valeur de TVA en % : ");
+    $prixTotalTTC = round($prixUniHT * $nbProduit * (1 + $TVA / 100), $precision = 2, $mode = PHP_ROUND_HALF_UP);
 
-$prixTotalTTC = round($prixUniHT * $nbProduit * (1 + $TVA / 100), $precision = 2, $mode = PHP_ROUND_HALF_UP);
+    echo "Votre prix total TTC est de  " . $prixTotalTTC . "€" . "\n";    
+}
 
-echo "Votre prix total TTC est de  " . $prixTotalTTC . "€" . "\n";
+
+
+
+
