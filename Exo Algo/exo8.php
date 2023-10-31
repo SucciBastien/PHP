@@ -38,9 +38,11 @@ elseif ($question==2){
 
     // Pyramide
 
+    // Je récupère le nombre d'étages que je veux dans ma pyramide
     $etage = readline("Entrez le nombre d'étage que vous voulez pour la pyramide : ")+1;
     $tab = [];
     
+    // Je créer le tableau pour les premières ligne jusqu'au haut de la pyramide
     for ($i=0; $i<$etage; $i++){
         for ($j=0; $j<$i; $j++){
             $tab[$i][$j] = "*";
@@ -48,6 +50,8 @@ elseif ($question==2){
         }
         echo "\n";
     }
+
+    // Je créer le tableau pour le reste de la pyramide
     for ($i=2; $i<$etage; $i++){
         for ($j=$i; $j<$etage; $j++){
             $tab[$i][$j] = "*";
@@ -58,8 +62,10 @@ elseif ($question==2){
 
     // Triangle
 
+    // Je récupère le nombre d'étage pour mon triangle
     $etage = readline("Entrez le nombre d'étage qu'aura le triangle : ")+1;
 
+    // Je créer le triangle en ajoutant une condition pour le remplissage du traingle différent de son exterieur
     for ($i=0; $i<$etage; $i++){
         for ($j=0; $j<$i; $j++){
             if ($j==0 or $j==$i-1 or $i==$etage-1)
