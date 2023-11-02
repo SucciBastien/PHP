@@ -81,7 +81,7 @@ for ($i=1; $i<=$Manches; $i++){
     }
     elseif ($reponse=="N" or $reponse=="n"){
         echo "\nFin du jeu. Le résultat final a été enregistré dans le fichier resultats.txt.";
-        $fp = fopen("resultats.txt", "w");
+        $fp = fopen("resultats.txt", "a");
         fwrite($fp, "Score après la manche $i : $pseudo ($ScoreUti) - Ordinateur ($ScoreOrdi)\n");
         fclose($fp);
     }
